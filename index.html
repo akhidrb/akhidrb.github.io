@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Personal website of Your Name — Software Engineer" />
-    <title>Your Name — Software Engineer</title>
+    <meta name="description" content="Abraheem Khidr — Senior Software Engineer (Golang, Python, FinTech, Infra, AI)" />
+    <title>Abraheem Khidr — Senior Software Engineer</title>
 
     <style>
         :root{
@@ -35,7 +35,6 @@
         a{ color: inherit; text-decoration: none; }
         a:hover{ text-decoration: underline; text-underline-offset: 4px; }
 
-        /* Layout */
         .wrap{ max-width: var(--max); margin: 0 auto; padding: 24px; }
         header{
             position: sticky; top: 0;
@@ -73,7 +72,6 @@
             text-decoration: none;
         }
 
-        /* Hero */
         .hero{
             display:grid;
             grid-template-columns: 1.3fr .7fr;
@@ -122,7 +120,7 @@
         .subtitle{
             color: var(--muted);
             font-size: 16px;
-            max-width: 62ch;
+            max-width: 70ch;
             margin: 0 0 18px;
         }
         .cta{
@@ -157,11 +155,8 @@
         .stat b{ display:block; font-size: 18px; }
         .stat span{ color: var(--muted); font-size: 13px; }
 
-        /* Sections */
         section{ margin-top: 22px; }
-        .section{
-            padding: 20px;
-        }
+        .section{ padding: 20px; }
         .section h2{
             margin: 0 0 8px;
             font-size: 18px;
@@ -194,7 +189,6 @@
         }
         .tag.muted{ color: var(--muted); }
 
-        /* Projects */
         .project{
             padding: 18px;
             border-radius: var(--radius);
@@ -203,13 +197,9 @@
             display:flex;
             flex-direction: column;
             gap: 10px;
-            min-height: 170px;
+            min-height: 190px;
         }
-        .project h3{
-            margin: 0;
-            font-size: 16px;
-            letter-spacing: -0.2px;
-        }
+        .project h3{ margin: 0; font-size: 16px; letter-spacing: -0.2px; }
         .project p{ margin: 0; color: var(--muted); font-size: 14px; }
         .project .meta{
             display:flex; gap: 10px; flex-wrap: wrap;
@@ -225,7 +215,6 @@
         }
         .project .meta a:hover{ background: rgba(255,255,255,.06); text-decoration:none; }
 
-        /* Footer */
         footer{
             margin: 26px 0 10px;
             padding: 16px;
@@ -234,9 +223,7 @@
             border-top: 1px solid var(--line);
         }
 
-        /* Utilities */
         .row{ display:flex; justify-content:space-between; gap: 12px; flex-wrap: wrap; }
-        .muted{ color: var(--muted); }
         .divider{ height: 1px; background: var(--line); margin: 14px 0; }
         .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     </style>
@@ -247,7 +234,7 @@
     <div class="nav">
         <div class="brand">
             <span class="dot"></span>
-            <span>Your Name</span>
+            <span>Abraheem Khidr</span>
         </div>
         <nav class="navlinks" aria-label="Primary">
             <a href="#about">About</a>
@@ -264,13 +251,18 @@
     <div class="hero">
         <div class="card hero-main">
             <div class="kicker">
-                <span class="pill">Open to opportunities</span>
-                <span>Backend • Distributed Systems • AI/LLM</span>
+                <span class="pill">Senior Engineer</span>
+                <span>FinTech • Infra • Distributed Systems • AI/LLM</span>
             </div>
-            <h1>Your Name<br/>Senior Software Engineer</h1>
+
+            <h1>Abraheem Khidr<br/>Senior Software Engineer</h1>
+
             <p class="subtitle">
-                I build reliable backend systems and developer-friendly platforms. Recently: designing microservices,
-                CI/CD, and production-grade APIs; exploring AI/LLM features with strong engineering discipline.
+                Senior Software Engineer with 7+ years of experience building high-scale fintech, cloud, and distributed backend systems.
+                Specialized in Golang and Python, with deep expertise in regulated financial platforms, real-time data processing,
+                and backend orchestration. Proven track record delivering production systems handling 200M+ EGP in financing,
+                improving platform throughput by 5×, and integrating LLM-based services for classification, entity extraction,
+                and document processing in compliance-driven environments.
             </p>
 
             <div class="cta">
@@ -278,13 +270,14 @@
                     ✉️ Contact
                     <small>(email / LinkedIn)</small>
                 </a>
-                <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">
+                <a class="btn" href="https://www.linkedin.com/in/abraheem-khidr/" target="_blank" rel="noreferrer">
                     🔗 LinkedIn
                 </a>
-                <a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">
+                <a class="btn" href="https://github.com/akhidrb" target="_blank" rel="noreferrer">
                     💻 GitHub
                 </a>
-                <a class="btn" href="YOUR_RESUME_LINK.pdf" target="_blank" rel="noreferrer">
+                <!-- Put your hosted resume link here (PDF). If you're hosting on GitHub Pages, keep the filename in your repo. -->
+                <a class="btn" href="Abraheem_Khidr.pdf" target="_blank" rel="noreferrer">
                     📄 Resume
                 </a>
             </div>
@@ -292,31 +285,28 @@
             <div class="divider"></div>
 
             <div class="row">
-                <span class="muted">Location: <b class="mono">Irvine, CA</b></span>
-                <span class="muted">Email: <b class="mono">you@email.com</b></span>
+                <span class="mono">Irvine, CA</span>
+                <span class="mono">akhidrb@gmail.com</span>
+                <span class="mono">(949) 482-7912</span>
             </div>
         </div>
 
         <aside class="card hero-side">
             <div class="stat">
-                <b>Focus</b>
-                <span>Go, Python, SQL, cloud infrastructure</span>
-            </div>
-            <div class="stat">
                 <b>Strengths</b>
-                <span>System design, production reliability, clear communication</span>
+                <span>System design • Problem solving • Production reliability</span>
             </div>
             <div class="stat">
-                <b>Currently</b>
-                <span>Building scalable services + AI-enabled workflows</span>
+                <b>Domain</b>
+                <span>Regulated fintech platforms, compliance-first workflows</span>
             </div>
             <div class="stat">
-                <b>Quick links</b>
-                <span>
-            <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
-            ·
-            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
-          </span>
+                <b>Infra + Data</b>
+                <span>Real-time pipelines, orchestration, scaling and observability</span>
+            </div>
+            <div class="stat">
+                <b>AI / LLM</b>
+                <span>Classification, entity extraction, document processing</span>
             </div>
         </aside>
     </div>
@@ -325,16 +315,19 @@
     <section id="about" class="card section">
         <h2>About</h2>
         <p>
-            Write 3–5 lines here about who you are, what you’re great at, and what kinds of roles you’re targeting.
-            Keep it concrete: what you build, scale, ship, and own in production.
+            I build backend systems that are designed to survive production: clear boundaries, predictable performance,
+            and operational visibility. My work sits at the intersection of <b>fintech</b> (regulated platforms, real-time processing),
+            <b>infrastructure</b> (cloud-native services, pipelines, orchestration), and <b>AI</b> (LLM-backed workflows with validation
+            and compliance constraints).
         </p>
+
         <div class="tagrow" aria-label="Highlights">
-            <span class="tag">Microservices</span>
-            <span class="tag">APIs</span>
-            <span class="tag">CI/CD</span>
-            <span class="tag">Observability</span>
+            <span class="tag">FinTech</span>
+            <span class="tag">Distributed Systems</span>
+            <span class="tag">Production Reliability</span>
+            <span class="tag">Backend Orchestration</span>
+            <span class="tag">Infra & Data Pipelines</span>
             <span class="tag">LLM Integrations</span>
-            <span class="tag muted">Replace these tags</span>
         </div>
     </section>
 
@@ -342,26 +335,43 @@
     <section class="grid" id="work">
         <div class="card section col-6">
             <h2>Experience</h2>
-            <p class="muted">Add 2–4 roles. Focus on impact + scale + ownership.</p>
+            <p class="muted">Selected roles (impact-focused).</p>
             <div class="divider"></div>
 
-            <p><b>Senior Software Engineer</b> — Company Name <span class="muted">(2023–Present)</span></p>
+            <p><b>Senior Software Engineer</b> — Oliv <span class="muted">(Mar 2024 – Present)</span></p>
             <ul class="muted">
-                <li>Designed and shipped ______ (microservice / pipeline / platform) used by ______.</li>
-                <li>Improved performance by ____% / reduced cost by ____ / improved reliability (SLOs).</li>
-                <li>Built CI/CD pipelines and deployment strategy across environments.</li>
+                <li>Architected and scaled a regulated fintech factoring platform facilitating <b>200M+ EGP</b> in SME financing.</li>
+                <li>Improved platform throughput by <b>5×</b> by optimizing core transaction workflows and processing pipelines.</li>
+                <li>Built high-concurrency backend systems using <b>Python</b>, <b>Celery</b>, <b>Redis</b>, and <b>MySQL</b> for real-time processing + background workflows.</li>
+                <li>Designed ingestion pipelines to normalize financial/document/third-party data for analytics and AI workflows.</li>
+                <li>Integrated <b>LLM-based services</b> for invoice classification, industry identification, and document data extraction in compliance-driven environments.</li>
+                <li>Implemented compliance-critical features (eKYC, contract signing, audit-friendly onboarding).</li>
             </ul>
 
-            <p><b>Software Engineer</b> — Company Name <span class="muted">(2021–2023)</span></p>
+            <p><b>Senior Software Engineer</b> — SOLO <span class="muted">(Jun 2023 – Jan 2024)</span></p>
             <ul class="muted">
-                <li>Owned ______ end-to-end (design → implementation → on-call → iterations).</li>
-                <li>Built APIs / data pipelines / integrations with ______.</li>
+                <li>Built a real-time financial data aggregation and reporting platform integrating multiple banks and third-party providers.</li>
+                <li>Used <b>Golang</b> for concurrency/performance with <b>PostgreSQL</b> and <b>AWS Lambda</b> for scalable processing.</li>
+            </ul>
+
+            <p><b>Senior Software Engineer</b> — Nyo <span class="muted">(Nov 2022 – Apr 2023)</span></p>
+            <ul class="muted">
+                <li>Led development of a <b>PCI-compliant</b> financial platform for parents and children.</li>
+                <li>Designed scalable architecture to improve reliability, maintainability, and security; managed deployment strategies.</li>
+            </ul>
+
+            <p><b>Software Engineer II</b> — Magalix (acquired by Weaveworks) <span class="muted">(Feb 2020 – Sep 2021)</span></p>
+            <ul class="muted">
+                <li>Built high-throughput ingestion pipelines (Kafka + distributed storage) for large-scale infrastructure telemetry.</li>
+                <li>Developed cloud-native backend services for Kubernetes automation: performance optimization, cost governance, policy enforcement.</li>
+                <li>Implemented large-scale processing with Apache Beam / Google Dataflow; contributed to Policy-as-Code and DevSecOps guardrails.</li>
             </ul>
         </div>
 
+        <!-- SKILLS: kept exactly as you approved previously -->
         <div class="card section col-6" id="skills">
             <h2>Skills</h2>
-            <p class="muted">Keep it honest and interview-ready.</p>
+            <p class="muted">Interview-ready and production-focused.</p>
             <div class="divider"></div>
 
             <div class="tagrow">
@@ -389,54 +399,63 @@
     <!-- PROJECTS -->
     <section id="projects" class="card section">
         <h2>Projects</h2>
-        <p class="muted">Pick 2–5. Show what you built, why it matters, and link code/demo if possible.</p>
+        <p class="muted">A portfolio snapshot across infra, fintech, and AI-enabled systems.</p>
         <div class="divider"></div>
 
         <div class="grid">
             <div class="project col-4">
-                <h3>Project One</h3>
+                <h3>Magalix — Kubernetes automation & telemetry pipelines</h3>
                 <p>
-                    2–3 lines: what it does, your role, and a measurable result (latency, scale, cost, adoption).
+                    Built cloud-native services and high-throughput pipelines processing infra telemetry for optimization and governance.
+                    Focused on scalability, policy enforcement, and DevSecOps controls in enterprise environments.
                 </p>
                 <div class="tagrow">
-                    <span class="tag">Go</span>
-                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Golang</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Kafka</span>
                     <span class="tag">Kubernetes</span>
+                    <span class="tag">Dataflow</span>
                 </div>
                 <div class="meta">
-                    <a href="https://github.com/YOUR_GITHUB/REPO" target="_blank" rel="noreferrer">Code</a>
-                    <a href="https://your-demo-link.com" target="_blank" rel="noreferrer">Demo</a>
+                    <a href="https://github.com/akhidrb" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="Abraheem_Khidr.pdf" target="_blank" rel="noreferrer">Resume details</a>
                 </div>
             </div>
 
             <div class="project col-4">
-                <h3>Project Two</h3>
+                <h3>Nyo — PCI-compliant family fintech platform</h3>
                 <p>
-                    Example: AI/LLM feature — explain inputs/outputs, safety/validation, and production constraints.
+                    Led system architecture and delivery of a PCI-compliant platform with strong reliability and security posture.
+                    Owned best practices, integration strategy, and deployment approach.
+                </p>
+                <div class="tagrow">
+                    <span class="tag">Golang</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Security</span>
+                </div>
+                <div class="meta">
+                    <a href="https://www.linkedin.com/in/abraheem-khidr/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="Abraheem_Khidr.pdf" target="_blank" rel="noreferrer">Resume details</a>
+                </div>
+            </div>
+
+            <div class="project col-4">
+                <h3>Oliv — Regulated fintech factoring + AI workflows</h3>
+                <p>
+                    Architected and scaled a regulated factoring platform enabling 200M+ EGP financing and 5× throughput improvements.
+                    Integrated LLM-backed services for classification and document processing within compliance constraints.
                 </p>
                 <div class="tagrow">
                     <span class="tag">Python</span>
+                    <span class="tag">Celery</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">MySQL</span>
                     <span class="tag">LLM</span>
-                    <span class="tag">Observability</span>
                 </div>
                 <div class="meta">
-                    <a href="https://github.com/YOUR_GITHUB/REPO2" target="_blank" rel="noreferrer">Code</a>
-                    <a href="YOUR_WRITEUP_LINK" target="_blank" rel="noreferrer">Write-up</a>
-                </div>
-            </div>
-
-            <div class="project col-4">
-                <h3>Project Three</h3>
-                <p>
-                    Example: a pipeline / infra project — CI/CD, deployments, monitoring, tracing, etc.
-                </p>
-                <div class="tagrow">
-                    <span class="tag">CI/CD</span>
-                    <span class="tag">Docker</span>
-                    <span class="tag">Cloud</span>
-                </div>
-                <div class="meta">
-                    <a href="YOUR_CASE_STUDY_LINK" target="_blank" rel="noreferrer">Case Study</a>
+                    <a href="https://github.com/akhidrb" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="Abraheem_Khidr.pdf" target="_blank" rel="noreferrer">Resume details</a>
                 </div>
             </div>
         </div>
@@ -446,38 +465,49 @@
     <section id="contact" class="card section">
         <h2>Contact</h2>
         <p class="muted">
-            The easiest way to reach me is email or LinkedIn. I’m happy to share references or a longer project portfolio.
+            The fastest way to reach me is email or LinkedIn. I’m happy to share references and deeper technical write-ups.
         </p>
         <div class="divider"></div>
 
         <div class="grid">
             <div class="col-6">
                 <p><b>Email</b></p>
-                <p class="muted mono">you@email.com</p>
+                <p class="muted mono"><a href="mailto:akhidrb@gmail.com">akhidrb@gmail.com</a></p>
+
+                <div style="height:10px"></div>
+
+                <p><b>Phone</b></p>
+                <p class="muted mono"><a href="tel:+19494827912">(949) 482-7912</a></p>
             </div>
+
             <div class="col-6">
                 <p><b>Links</b></p>
                 <p class="muted">
-                    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/abraheem-khidr/" target="_blank" rel="noreferrer">LinkedIn</a>
                     <span class="muted"> · </span>
-                    <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://github.com/akhidrb" target="_blank" rel="noreferrer">GitHub</a>
                     <span class="muted"> · </span>
-                    <a href="YOUR_RESUME_LINK.pdf" target="_blank" rel="noreferrer">Resume</a>
+                    <a href="Abraheem_Khidr.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
+                </p>
+
+                <div class="divider"></div>
+
+                <p class="muted">
+                    <b>What I’m best at:</b> designing clear systems, shipping production-ready code, and making services reliable
+                    under real-world constraints (performance, security, and operational visibility).
                 </p>
             </div>
         </div>
     </section>
 
     <footer>
-        <span class="muted">© <span id="year"></span> Your Name • Built with plain HTML/CSS</span>
+        <span class="muted">© <span id="year"></span> Abraheem Khidr</span>
     </footer>
 </main>
 
 <script>
-    // update footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // smooth scroll for in-page nav
     document.querySelectorAll('a[href^="#"]').forEach(a => {
         a.addEventListener("click", (e) => {
             const id = a.getAttribute("href");
